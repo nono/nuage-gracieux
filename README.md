@@ -22,6 +22,17 @@ It is build with less known languages like [Elixir](http://elixir-lang.org/)
 and [Elm](http://elm-lang.org/).
 
 
+Paas
+----
+
+Paas is a kind of cozy-controller + cozy-monitor. It manages the platform, ie
+the stack and the applications. To start it:
+
+* Install hex with `mix local.hex`
+* Install dependencies with `mix deps.get`
+* Start Phoenix endpoint with `mix phoenix.server`
+
+
 Copyheart
 ---------
 
