@@ -5,7 +5,8 @@ defmodule Paas.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", Paas do
+  scope "/", Paas do
     pipe_through :api
+    get "/", HomeController, :index
   end
 end
