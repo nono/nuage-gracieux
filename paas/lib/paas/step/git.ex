@@ -7,9 +7,9 @@ defmodule Paas.Step.Git do
 
   def cloneRepository(pot) do
     pot
-    |> Pot.addCommands [
+    |> Pot.addCommands([
       ["git", "clone", "https://github.com/cozy/cozy-#{pot.app}", pot.app],
       ["cd", pot.app],
-    ]
+    ])
   end
 end

@@ -9,9 +9,9 @@ defmodule Paas.Step.Workspace do
 
   def createDirectory(pot) do
     pot
-    |> Pot.addCommands [
+    |> Pot.addCommands([
       ["mkdir", "-p", @base],
       ["cd", @base],
-    ]
+    ])
   end
 end

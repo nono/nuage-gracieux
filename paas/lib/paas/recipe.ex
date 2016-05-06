@@ -9,7 +9,8 @@ defmodule Paas.Recipe do
   alias Paas.Step.Workspace
 
   def install(%{app: app}) do
-    Pot.create(app)
+    app
+    |> Pot.create
     |> Workspace.createDirectory
     |> Git.cloneRepository
     |> Npm.installDependencies

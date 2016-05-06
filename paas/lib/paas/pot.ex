@@ -1,5 +1,6 @@
 defmodule Paas.Pot do
-  @module """
+  @moduledoc """
+  Put all the ingredients in the pot
   """
 
   def create(app) do

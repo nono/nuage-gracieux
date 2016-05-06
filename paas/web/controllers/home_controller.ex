@@ -4,8 +4,9 @@ defmodule Paas.HomeController do
   """
 
   use Paas.Web, :controller
+  alias Paas.Mixfile
 
   def index(conn, _params) do
-    json conn, %{"Paas" => Paas.Mixfile.project[:version]}
+    json conn, %{"Paas" => Mixfile.project[:version]}
   end
 end

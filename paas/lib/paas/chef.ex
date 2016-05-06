@@ -5,6 +5,7 @@ defmodule Paas.Chef do
   """
 
   use GenServer
+  alias Paas.Recipe
 
   # Client
 
@@ -20,7 +21,7 @@ defmodule Paas.Chef do
 
   def handle_call({:install, app}, _from, state) do
     IO.puts "Install #{app}"
-    resp = Paas.Recipe.install %{app: app}
+    resp = Recipe.install %{app: app}
     {:reply, resp, state}
   end
 

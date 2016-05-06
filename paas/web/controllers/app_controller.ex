@@ -4,10 +4,11 @@ defmodule Paas.AppController do
   """
 
   use Paas.Web, :controller
+  alias Paas.Chef
 
   def create(conn, _params) do
     app = "foobar"
-    resp = Paas.Chef.install app
+    resp = Chef.install app
     json conn, resp
   end
 end

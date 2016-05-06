@@ -7,8 +7,8 @@ defmodule Paas.Step.Npm do
 
   def installDependencies(pot) do
     pot
-    |> Pot.addCommands [
+    |> Pot.addCommands([
       ["npm", "install"]
-    ]
+    ])
   end
 end
