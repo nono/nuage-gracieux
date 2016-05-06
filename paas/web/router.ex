@@ -12,5 +12,6 @@ defmodule Paas.Router do
   scope "/", Paas do
     pipe_through :api
     get "/", HomeController, :index
+    resources "/apps", AppController, only: [:create]
   end
 end

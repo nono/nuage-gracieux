@@ -1,6 +1,8 @@
 Nuage Gracieux
 ==============
 
+[![Build Status](https://travis-ci.org/nono/nuage-gracieux.svg?branch=master)](https://travis-ci.org/nono/nuage-gracieux)
+
 What is Cozy and ng?
 --------------------
 

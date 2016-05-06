@@ -31,7 +31,7 @@ defmodule Paas.Mixfile do
     [{:phoenix, "~> 1.1.4"},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:credo, "~> 0.3", only: [:dev, :test]}
+     {:credo, "~> 0.3", only: [:dev, :test]},
    ]
   end
 end
