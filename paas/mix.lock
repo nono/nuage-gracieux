@@ -1,5 +1,7 @@
-%{"cowboy": {:hex, :cowboy, "1.0.4"},
+%{"bunt": {:hex, :bunt, "0.1.5"},
+  "cowboy": {:hex, :cowboy, "1.0.4"},
   "cowlib": {:hex, :cowlib, "1.0.2"},
+  "credo": {:hex, :credo, "0.3.13"},
   "gettext": {:hex, :gettext, "0.11.0"},
   "phoenix": {:hex, :phoenix, "1.1.4"},
   "plug": {:hex, :plug, "1.1.4"},

@@ -1,4 +1,8 @@
 defmodule Paas.ErrorView do
+  @moduledoc """
+  Display error pages
+  """
+
   use Paas.Web, :view
 
   def render("404.json", _assigns) do

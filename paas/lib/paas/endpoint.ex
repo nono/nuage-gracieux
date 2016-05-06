@@ -1,4 +1,8 @@
 defmodule Paas.Endpoint do
+  @moduledoc """
+  Phoenix endpoint
+  """
+
   use Phoenix.Endpoint, otp_app: :paas
 
   socket "/socket", Paas.UserSocket

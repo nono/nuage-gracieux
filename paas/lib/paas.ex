@@ -1,4 +1,9 @@
 defmodule Paas do
+  @moduledoc """
+  Paas is a kind of cozy-controller + cozy-monitor. It manages the platform, ie
+  the stack and the applications. To start it:
+  """
+
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html

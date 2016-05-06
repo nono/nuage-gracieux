@@ -1,4 +1,8 @@
 defmodule Paas.Router do
+  @moduledoc """
+  Phoenix router
+  """
+
   use Paas.Web, :router
 
   pipeline :api do
