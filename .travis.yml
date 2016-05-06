@@ -4,8 +4,10 @@ elixir: 1.2.5
 sudo: false
 
 before_install:
+  - mix local.hex --force
   - cd paas
   - mix deps.get
 
 script:
   - mix credo
+  - mix test
