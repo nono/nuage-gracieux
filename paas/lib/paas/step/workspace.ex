@@ -7,6 +7,10 @@ defmodule Paas.Step.Workspace do
 
   @base Path.expand "../../../../workspace", __DIR__
 
+  def baseDir do
+    @base
+  end
+
   def createDirectory(pot) do
     pot
     |> Pot.addCommands([

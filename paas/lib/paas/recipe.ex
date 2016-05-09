@@ -6,6 +6,7 @@ defmodule Paas.Recipe do
   alias Paas.Pot
   alias Paas.Step.Git
   alias Paas.Step.Npm
+  alias Paas.Step.Shell
   alias Paas.Step.Workspace
 
   def install(%{app: app}) do
@@ -14,6 +15,7 @@ defmodule Paas.Recipe do
     |> Workspace.createDirectory
     |> Git.cloneRepository
     |> Npm.installDependencies
-    # |> Command.execute
+    |> IO.inspect
+    |> Shell.execute
   end
 end

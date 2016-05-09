@@ -17,7 +17,7 @@ defmodule Paas.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Paas, []},
-     applications: [:phoenix, :cowboy, :logger, :gettext]]
+     applications: [:phoenix, :cowboy, :logger, :gettext, :porcelain]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,6 +31,7 @@ defmodule Paas.Mixfile do
     [{:phoenix, "~> 1.1.4"},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
+     {:porcelain, "~> 2.0"},
      {:credo, "~> 0.3", only: [:dev, :test]},
    ]
   end

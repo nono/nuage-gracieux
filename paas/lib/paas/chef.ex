@@ -14,7 +14,8 @@ defmodule Paas.Chef do
   end
 
   def install(app) do
-    GenServer.call :chef, {:install, app}
+    timeout = 300_000  # 5 minutes
+    GenServer.call :chef, {:install, app}, timeout
   end
 
   # Server callbacks

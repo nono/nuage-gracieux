@@ -7,7 +7,7 @@ defmodule Paas.AppController do
   alias Paas.Chef
 
   def create(conn, _params) do
-    app = "foobar"
+    app = "contacts"
     resp = Chef.install app
     json conn, resp
   end
