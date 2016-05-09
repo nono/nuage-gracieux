@@ -15,7 +15,7 @@ defmodule Paas.Recipe do
     |> Workspace.createDirectory
     |> Git.cloneRepository
     |> Npm.installDependencies
-    |> IO.inspect
+    # |> IO.inspect
     |> Shell.execute
   end
 end

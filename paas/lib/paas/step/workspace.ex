@@ -7,7 +7,7 @@ defmodule Paas.Step.Workspace do
 
   @base Path.expand "../../../../workspace", __DIR__
 
-  def baseDir do
+  def base_dir do
     @base
   end
 

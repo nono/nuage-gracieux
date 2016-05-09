@@ -1,12 +1,12 @@
 defmodule Paas.Step.Shell do
-  @defmodule """
+  @moduledoc """
   Execute commands in the shell
   """
 
   alias Paas.Step.Workspace
 
   def execute(pot) do
-    executeCommands(pot.commands, Workspace.baseDir)
+    executeCommands(pot.commands, Workspace.base_dir)
     pot = %{pot | :commands => []}
   end
 
@@ -21,10 +21,9 @@ defmodule Paas.Step.Shell do
     Path.absname dir, cwd
   end
   defp executeCommand([prog|args], cwd) do
-    logFile = Path.join Workspace.baseDir, "install.log"
     options = [err: :out, dir: cwd]
     Porcelain.exec(prog, args, options)
-    |> IO.inspect
+    # |> IO.inspect
     cwd
   end
 end
